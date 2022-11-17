@@ -281,18 +281,57 @@
         <div class="modal is-hidden" data-modal>
             <div class="modal__body">
                 <button type="buttom" class="close__modal-border" data-modal-close>
-                    <svg class="modal__close">
-                        <use height="11" width="11" href="./img/icons.svg#icon-close">
-                        </use>
-                    </svg>
+                    <span class="feedback-icon__style"><svg class="modal__close">
+                            <use height="11" width="11" href="./img/icons.svg#icon-close">
+                            </use>
+                        </svg>
+                    </span>
                 </button>
                 <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
-                <div class="modal__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quod quia maxime sapiente aut
-                    alias. Amet, ratione repellat ullam enim maiores tempore voluptate alias, et velit deleniti,
-                    reiciendis aperiam. Deserunt debitis quam laboriosam dolorem, possimus libero unde obcaecati dolore
-                    quos illum harum voluptas temporibus nostrum aspernatur ex consectetur, assumenda aperiam?
-                </div>
+                <form class="feedback-form" action="">
+                    <div class="feedback-form__row">
+                        <div class="feedback-form__item">
+                            <input class="feedback-form__input" type="text" name="name" id="feedback-form-name">
+                            <label class="feedback-form__lable" for="feedback-form-name">Ім'я</label>
+                            <span class="feedback-icon__style">
+                                <svg class="feedback-form__icon">
+                                    <use height="12" width="12" href="./img/icons.svg#icon-user_modal">
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="feedback-form__item">
+                            <input class="feedback-form__input" type="tel" name="phone" id="feedback-form-tel">
+                            <label class="feedback-form__lable" for="feedback-form-tel">Телефон</label>
+                            <span class="feedback-icon__style">
+                                <svg class="feedback-form__icon">
+                                    <use height="12" width="12" href="./img/icons.svg#icon-phone_modal">
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="feedback-form__item">
+                            <input class="feedback-form__input" type="email" name="e-mail" id="feedback-form-email">
+                            <label class="feedback-form__lable" for="feedback-form-email">Пошта</label>
+                            <span class="feedback-icon__style">
+                                <svg class="feedback-form__icon">
+                                    <use height="12" width="12" href="./img/icons.svg#icon-meil_modal">
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="feedback-form__item">
+                            <textarea class="feedback-form__textarea" id="feedback-form-comment" name="feedback-comment"
+                                rows="4"></textarea>
+                            <label class="feedback-form__lable-textarea" for="feedback-form-comment">Коментар</label>
+                        </div>
+                    </div>
+                    <div class="feedback-form__item-checkbox">
+                        <input class="feedback-form__checkbox" type="checkbox" name="agreement"
+                            id="feedback-form__checkbox">
+                        <label class="feedback-form__lable-checkbox" for="feedback-form__checkbox">Погоджуюся з
+                            розсилкою та
+                            приймаю <a class="feedback-form__checkbox-link" href="#">Умови договору</a></label>
+                    </div>
+                    <button class="feedback-form__buttom buttom" type="submit">Відправити</button>
+                </form>
             </div>
         </div>
     </main>
@@ -340,7 +379,7 @@
                     <form class="mail-push__form" action="">
                         <label class="mail-push__lable" for="e-mail-push">Підпишіться на розсилку</label>
                         <div class="mail-push__row">
-                            <input class="mail-push__input" type="email" name="E-mail" id="e-mail-push"
+                            <input class="mail-push__input" type="email" name="E-mail-subscribe" id="e-mail-push"
                                 placeholder="E-mail">
                             <button class="mail-push__buttom buttom" type="submit">Підписатися <svg
                                     class="mail-push__icon" width="24" height="24">
