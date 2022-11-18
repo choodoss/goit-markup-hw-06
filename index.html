@@ -281,11 +281,10 @@
         <div class="modal is-hidden" data-modal>
             <div class="modal__body">
                 <button type="buttom" class="close__modal-border" data-modal-close>
-                    <span class="feedback-icon__style"><svg class="modal__close">
-                            <use height="11" width="11" href="./img/icons.svg#icon-close">
+                    <svg class="modal__close">
+                            <use height="18" width="18" href="./img/icons.svg#icon-close">
                             </use>
                         </svg>
-                    </span>
                 </button>
                 <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
                 <form class="feedback-form" action="">
@@ -295,7 +294,7 @@
                             <label class="feedback-form__lable" for="feedback-form-name">Ім'я</label>
                             <span class="feedback-icon__style">
                                 <svg class="feedback-form__icon">
-                                    <use height="12" width="12" href="./img/icons.svg#icon-user_modal">
+                                    <use height="18" width="18" href="./img/icons.svg#icon-user_modal">
                                 </svg>
                             </span>
                         </div>
@@ -304,7 +303,7 @@
                             <label class="feedback-form__lable" for="feedback-form-tel">Телефон</label>
                             <span class="feedback-icon__style">
                                 <svg class="feedback-form__icon">
-                                    <use height="12" width="12" href="./img/icons.svg#icon-phone_modal">
+                                    <use height="18" width="18" href="./img/icons.svg#icon-phone_modal">
                                 </svg>
                             </span>
                         </div>
@@ -313,22 +312,23 @@
                             <label class="feedback-form__lable" for="feedback-form-email">Пошта</label>
                             <span class="feedback-icon__style">
                                 <svg class="feedback-form__icon">
-                                    <use height="12" width="12" href="./img/icons.svg#icon-meil_modal">
+                                    <use height="18" width="18" href="./img/icons.svg#icon-meil_modal">
                                 </svg>
                             </span>
                         </div>
                         <div class="feedback-form__item">
                             <textarea class="feedback-form__textarea" id="feedback-form-comment" name="feedback-comment"
-                                rows="4"></textarea>
+                                rows="7" placeholder="Введіть текст"></textarea>
                             <label class="feedback-form__lable-textarea" for="feedback-form-comment">Коментар</label>
                         </div>
                     </div>
                     <div class="feedback-form__item-checkbox">
-                        <input class="feedback-form__checkbox" type="checkbox" name="agreement"
-                            id="feedback-form__checkbox">
-                        <label class="feedback-form__lable-checkbox" for="feedback-form__checkbox">Погоджуюся з
-                            розсилкою та
-                            приймаю <a class="feedback-form__checkbox-link" href="#">Умови договору</a></label>
+                        <label class="feedback-form__lable-checkbox">Погоджуюся з
+                            розсилкою та приймаю
+                            <a class="feedback-form__checkbox-link" href="#">Умови договору</a>
+                            <input class="feedback-form__checkbox" type="checkbox" name="agreement">
+                            <span class="checkbox-style"></span>
+                        </label>
                     </div>
                     <button class="feedback-form__buttom buttom" type="submit">Відправити</button>
                 </form>
