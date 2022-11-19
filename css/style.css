@@ -11,7 +11,7 @@
 }
 
 *:focus {
-  outline: 1px solid #2196F3;
+  outline: 2px solid #2196F3;
 }
 
 ul {
@@ -637,7 +637,7 @@ header {
   background-origin: border-box;
   border: 2px solid var(--primary-color-hover);
 }
-.feedback-form__checkbox:focus + .checkbox-style {
+.feedback-form__checkbox:focus + .checkbox-style, .feedback-form__checkbox:hover + .checkbox-style {
   border: 2px solid var(--primary-color-hover);
 }
 
