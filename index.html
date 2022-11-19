@@ -280,7 +280,7 @@
         </section>
         <div class="modal is-hidden" data-modal>
             <div class="modal__body">
-                <button type="buttom" class="close__modal-border" data-modal-close>
+                <button tabindex="8" type="buttom" class="close__modal-border" data-modal-close>
                     <svg class="modal__close">
                         <use height="18" width="18" href="./img/icons.svg#icon-close">
                         </use>
@@ -290,41 +290,41 @@
                 <form class="feedback-form" action="">
                     <div class="feedback-form__row">
                         <div class="feedback-form__item">
-                            <input class="feedback-form__input" type="text" name="name" id="feedback-form-name">
+                            <input class="feedback-form__input" tabindex="1" type="text" name="name" id="feedback-form-name" placeholder=" ">
                             <label class="feedback-form__lable" for="feedback-form-name">Ім'я</label>
                             <svg class="feedback-form__icon">
                                 <use height="18" width="18" href="./img/icons.svg#icon-user_modal">
                             </svg>
                         </div>
                         <div class="feedback-form__item">
-                            <input class="feedback-form__input" type="tel" name="phone" id="feedback-form-tel">
+                            <input class="feedback-form__input" tabindex="2" type="tel" name="phone" id="feedback-form-tel" placeholder=" ">
                             <label class="feedback-form__lable" for="feedback-form-tel">Телефон</label>
-                                <svg class="feedback-form__icon">
-                                    <use height="18" width="18" href="./img/icons.svg#icon-phone_modal">
-                                </svg>
+                            <svg class="feedback-form__icon">
+                                <use height="18" width="18" href="./img/icons.svg#icon-phone_modal">
+                            </svg>
                         </div>
                         <div class="feedback-form__item">
-                            <input class="feedback-form__input" type="email" name="e-mail" id="feedback-form-email">
+                            <input class="feedback-form__input" tabindex="3" type="email" name="e-mail" id="feedback-form-email" placeholder=" ">
                             <label class="feedback-form__lable" for="feedback-form-email">Пошта</label>
-                                <svg class="feedback-form__icon">
-                                    <use height="18" width="18" href="./img/icons.svg#icon-meil_modal">
-                                </svg>
+                            <svg class="feedback-form__icon">
+                                <use height="18" width="18" href="./img/icons.svg#icon-meil_modal">
+                            </svg>
                         </div>
                         <div class="feedback-form__item">
-                            <textarea class="feedback-form__textarea" id="feedback-form-comment" name="feedback-comment"
-                                rows="7" placeholder="Введіть текст"></textarea>
+                            <textarea class="feedback-form__textarea" tabindex="4" id="feedback-form-comment" name="feedback-comment"
+                                rows="7" placeholder=" "></textarea>
                             <label class="feedback-form__lable-textarea" for="feedback-form-comment">Коментар</label>
                         </div>
                     </div>
                     <div class="feedback-form__item-checkbox">
                         <label class="feedback-form__lable-checkbox">Погоджуюся з
                             розсилкою та приймаю
-                            <a class="feedback-form__checkbox-link" href="#">Умови договору</a>
-                            <input class="feedback-form__checkbox" type="checkbox" name="agreement">
+                            <a tabindex="6" class="feedback-form__checkbox-link" href="#">Умови договору</a>
+                            <input class="feedback-form__checkbox" tabindex="5" type="checkbox" name="agreement">
                             <span class="checkbox-style"></span>
                         </label>
                     </div>
-                    <button class="feedback-form__buttom buttom" type="submit">Відправити</button>
+                    <button tabindex="7" class="feedback-form__buttom buttom" type="submit">Відправити</button>
                 </form>
             </div>
         </div>
