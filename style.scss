@@ -659,7 +659,7 @@ header {
 
     &:focus+.checkbox-style,
     &:hover+.checkbox-style {
-        border: 2px solid var(--primary-color-hover);
+        border-color: var(--primary-color-hover);
     }
 }
 
@@ -695,9 +695,7 @@ header {
 .footer {
     background: var(--footer-background);
     padding: 60px 0;
-}
 
-.footer {
     .my-logo {
         margin-right: 0;
         margin-bottom: 20px;
