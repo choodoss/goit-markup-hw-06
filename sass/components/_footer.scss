@@ -13,19 +13,23 @@
     align-items: baseline;
 }
 
+.address-column {
+    margin-right: 70px;
+}
+
 .logo-white {
     color: #FFFFFF;
 }
 
-.address__body {
+.address-column__body {
     font-style: normal;
 }
 
-.address__item:not(:last-child) {
+.address-column__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.address__item {
+.address-column__item {
 
     & .email,
     & .phone {
@@ -54,17 +58,13 @@
     }
 }
 
-.address__column {
-    margin-right: 70px;
-}
-
 //2 колонка
 
-.social__column {
+.social-column {
     margin-right: auto;
 }
 
-.social__column-text {
+.social-column__text {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -74,7 +74,7 @@
 }
 
 
-.social__column {
+.social-column {
     .social-list__link {
         color: #ffffff;
         background-color: rgba(255, 255, 255, 0.1);
@@ -122,6 +122,7 @@
     min-width: 358px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
+    //что такое filter?
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
@@ -134,15 +135,15 @@
     }
 }
 
-.mail-push__input,
-.mail-push__input::placeholder {
+.mail-push__input {
+&::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: inherit;
     color: rgba(255, 255, 255, 0.6);
 }
-
+}
 .mail-push__input {
     color: #ffffff;
 }

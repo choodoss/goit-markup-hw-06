@@ -2,7 +2,7 @@ header {
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-nav__row {
+.main-nav {
     display: flex;
     align-items: center;
 }
@@ -28,7 +28,7 @@ header {
     gap: 50px;
 }
 
-.main__title {
+.main-nav__title {
     position: relative;
     display: block;
     padding: 32px 0;
@@ -39,24 +39,28 @@ header {
     letter-spacing: 0.02em;
     color: $primary-title-color;
     transition: $transition-color;
-    &::after{
+
+    &::after {
         content: "";
         position: absolute;
         bottom: -1px;
         left: 0;
-    
+
         height: 4px;
         width: 100%;
         transform: scaleX(0%);
         transform-origin: left;
-    
+
         border-radius: 2px;
         background-color: $primary-color-hover;
         opacity: 0;
         transition: $transition-opacity, $transition-transform;
     }
-    &focus, &:hover {
+
+    &focus,
+    &:hover {
         color: $primary-color-hover;
+
         &::after {
             opacity: 1;
             transform: scaleX(100%);
@@ -64,7 +68,7 @@ header {
     }
 }
 
-.main__title.current::after {
+.main-nav__title.current::after {
     opacity: 1;
     transform: scaleX(100%);
     color: $primary-color-hover;
@@ -80,6 +84,8 @@ header {
     gap: 50px;
 }
 
+.contacts-nav__item {}
+
 .email {
     display: flex;
     align-items: center;
@@ -87,7 +93,9 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: $transition-color;
-    &:focus, &:hover {
+
+    &:focus,
+    &:hover {
         color: $primary-color-hover;
     }
 }
@@ -99,7 +107,9 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: $transition-color;
-    &:focus, &:hover {
+
+    &:focus,
+    &:hover {
         color: $primary-color-hover;
     }
 }

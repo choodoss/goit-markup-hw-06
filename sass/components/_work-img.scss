@@ -12,22 +12,22 @@
     color: $primary-title-color;
 }
 
-.work-img-list__row {
+.work-img__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--primary-gap);
 }
 
-.work-img-list__item {
+.work-img__item {
     @include basis(2, 3);
 }
 
-.work-img-list__item-bg {
+.work-img__bg {
     position: relative;
 }
 
-.item-bg__text {
+.work-img__text {
     position: absolute;
     bottom: 0;
     left: 0;

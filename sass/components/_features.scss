@@ -9,7 +9,7 @@
     flex-basis: calc((100% - (3*var(--primary-gap))) / 4);
 }
 
-.features__bgc-img {
+.features__img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,8 @@
     height: 120px;
     margin-bottom: 30px;
 }
+
+.features__body-img {}
 
 .features__title {
     margin: 0 0 10px 0;
